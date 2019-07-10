@@ -1,0 +1,62 @@
+{
+  "webName":"Score-電競玩家賽事社區",
+  "global":{
+    "login":"登入",
+    "register":"註冊",
+    "join":"加入",
+    "confirm":"確認",
+    "submit":"提交",
+    "all":"全部",
+    "open":"打開",
+    "close":"關閉",
+    "allMatchProgress":"全部賽程",
+    "changeLanguageModalTitle":"選擇語言版本",
+    "fruit": "果子",
+    "experience": "經驗",
+    "reward": "獎勵"
+  },
+  "gameName":{
+    "lfl":"英雄聯盟",
+    "pvp":"王者榮耀",
+    "pubg":"絕地求生",
+    "beGame":"暴雪遊戲"
+
+  },
+
+  "headerNav": {
+    "home": "首頁",
+    "match": {
+      "watchMatch":"看比賽",
+      "matchProgress":"賽程",
+      "match":"賽事",
+      "matchData":"大數據"
+    },
+    "movie":"短視頻",
+    "post": {
+      "post":"看帖",
+      "moment":"圈子",
+      "follow":"關注"
+    },
+    "bet":"競猜",
+    "star":"官方號",
+    "more": {
+      "more":"更多",
+      "lfl":"幻聯賽",
+      "recreation":"娛樂",
+      "live":"直播",
+      "help":"幫助"
+    }
+  },
+
+  "starPage":{
+    "hot":"熱門推薦",
+    "myStar":"我的官方號"
+  },
+
+  "taskPage":{
+    "title":"任務中心",
+    "dailyTasks": "每日任務",
+    "newbieTask": "新手任務",
+    "fruitBalance": "果子餘額"
+  }
+}

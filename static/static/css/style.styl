@@ -1,0 +1,296 @@
+@import "variable.styl"
+@font-face {
+  font-family: 'Industry-BoldItalic';
+  src: url('/static/font/Industry-BoldItalic.eot');
+  src: url('/static/font/Industry-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/static/font/Industry-BoldItalic.ttf') format('truetype'),
+      url('/static/font/Industry-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Industry-Demi';
+  src: url('/static/font/Industry-Demi.eot');
+  src: url('/static/font/Industry-Demi?#iefix') format('embedded-opentype'),
+      url('/static/font/Industry-Demi.ttf') format('truetype'),
+      url('/static/font/Industry-Demi.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Industry-Bold';
+  src: url('/static/font/Industry-Bold.eot');
+  src: url('/static/font/Industry-Bold?#iefix') format('embedded-opentype'),
+      url('/static/font/Industry-Bold.ttf') format('truetype'),
+      url('/static/font/Industry-Bold.woff') format('woff');
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  outline:none;
+}
+
+div{border:none}
+/*placeholder css*/
+::-moz-placeholder {
+  font-family: "Microsoft YaHei"
+}
+
+::-webkit-input-placeholder {
+  font-family: "Microsoft YaHei"
+}
+
+:-ms-input-placeholder {
+  font-family: "Microsoft YaHei"
+}
+
+/*reset*/
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, section, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: 14px;
+  background-color: #f5f6f7;
+  color: #2D2F33;
+  font: 14px / 1.4 "PingFang SC", "Microsoft YaHei", "微软雅黑", sans-serif, "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial;
+}
+
+html, body, #__score, #__nuxt, #__layout {
+  height: 101%;
+  line-height: 1;
+  font-size: 14px;
+  color: $color-gray;
+  background-color: #F5F6F7;
+  /* overflow-y: scroll; */
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+//font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+ul, ol, dd, dt, dl {
+  list-style-type: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  color: $color-gray;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a, input, button, select {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+a, a:hover, a:active, a:visited, a:link, a:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+
+input, img {
+  border: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+input:-webkit-autofill,
+input:-internal-autofill-previewed,
+input:-internal-autofill-selected,
+textarea:-internal-autofill-previewed,
+textarea:-internal-autofill-selected,
+select:-internal-autofill-previewed,
+select:-internal-autofill-selected {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  background-color: none !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+i, em {
+  font-style: normal;
+}
+
+:focus {
+  outline: none
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/*滚动条*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+  border: 3px solid #fff;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f1f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0D3D9;
+}
+
+::-webkit-scrollbar-corner {
+  width: 5px;
+  height: 3px;
+  background: #D0D3D9;
+}
+
+::-webkit-scrollbar-resizer {
+  display: none;
+}
+
+::-moz-scrollbar {
+  width: 5px;
+  height: 0;
+  border: 3px solid #fff;
+}
+
+::-moz-scrollbar-track {
+  background: #f0f1f2;
+}
+
+::-moz-scrollbar-thumb {
+  background: #D0D3D9;
+}
+
+::-moz-scrollbar-corner {
+  width: 5px;
+  height: 3px;
+  background: #D0D3D9;
+}
+
+::-moz-scrollbar-resizer {
+  display: none;
+}
+
+.dropdown-wrap, .ivu-select-dropdown {
+  &::-webkit-scrollbar-track {
+    background: transparent
+  }
+  &::-moz-scrollbar-track {
+    background: transparent
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0, 0);
+    visibility hidden
+    border-radius 3px
+  }
+  &::-moz-scrollbar-thumb {
+    background: rgba(0,0,0, 0);
+    visibility hidden
+    border-radius 3px
+  }
+  &:hover {
+    &::-webkit-scrollbar-thumb{
+      background: rgba(0,0,0, .2);
+      visibility visible
+    }
+    &::-moz-scrollbar-thumb {
+      background: rgba(0,0,0, .2);
+      visibility visible
+    }
+  }
+}
+
+.f-left, .fl, .fll {
+  float: left
+}
+
+.f-right, .fr, .flr {
+  float: right;
+}
+
+//清除浮动
+.clearfix, .cl {
+  zoom: 1
+  display: table
+  &.after {
+    display none
+    content: ''
+    clear: both
+    height: 0
+  }
+}
+
+.none,.hide {
+  display none;
+}
+
+.mid {
+  display inline-block
+  vertical-align middle
+}
+
+.c-m {
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+}
+/*flex*/
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  &.flex_wrap{
+    flex-wrap: wrap;
+  }
+  &.align_center {
+    align-items: center;
+  }
+  &.justify_between{
+    justify-content: space-between;
+  }
+  &.justify_center{
+    justify-content: center;
+  }
+  &.justify_end{
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+// faq 图片
+  .faq_content {
+    img {
+      max-width 100%
+    }
+  }
+}

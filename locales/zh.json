@@ -1,0 +1,62 @@
+{
+  "webName":"Score-电竞玩家赛事社区",
+  "global":{
+    "login":"登录",
+    "register":"注册",
+    "join":"加入",
+    "confirm":"确认",
+    "submit":"提交",
+    "all":"全部",
+    "open":"打开",
+    "close":"关闭",
+    "allMatchProgress":"全部赛程",
+    "changeLanguageModalTitle":"选择语言版本",
+    "fruit": "果子",
+    "experience": "经验",
+    "reward": "奖励"
+  },
+  "gameName":{
+    "lfl":"英雄联盟",
+    "pvp":"王者荣耀",
+    "pubg":"绝地求生",
+    "beGame":"暴雪游戏"
+
+  },
+
+  "headerNav": {
+    "home": "首页",
+    "match": {
+      "watchMatch":"看比赛",
+      "matchProgress":"赛程",
+      "match":"赛事",
+      "matchData":"大数据"
+    },
+    "movie":"短视频",
+    "post": {
+      "post":"看帖",
+      "moment":"圈子",
+      "follow":"关注"
+    },
+    "bet":"竞猜",
+    "star":"官方号",
+    "more": {
+      "more":"更多",
+      "lfl":"幻联赛",
+      "recreation":"娱乐",
+      "live":"直播",
+      "help":"帮助"
+    }
+  },
+
+  "starPage":{
+    "hot":"热门推荐",
+    "myStar":"我的官方号"
+  },
+
+  "taskPage":{
+    "title":"任务中心",
+    "dailyTasks": "每日任务",
+    "newbieTask": "新手任务",
+    "fruitBalance": "果子余额"
+  }
+}

@@ -1,0 +1,370 @@
+/** 默认UI样式 **/
+.pt10{ padding-top:10px;}
+.pt20{ padding-top:20px;}
+.pt30{ padding-top:30px;}
+.pb10{ padding-bottom:10px;}
+.pb20{ padding-bottom:20px;}
+.pb30{ padding-bottom:30px;}
+
+.pl10{padding-left: 10px;}
+.pl15{padding-left: 15px;}
+.pl20{padding-left: 20px;}
+.pl25{padding-left: 25px;}
+.pl30{padding-left: 30px;}
+.pl36{ padding-left:36px;}
+.pl40{ padding-left:40px;}
+.pl48{ padding-left:48px;}
+.pl50{ padding-left:50px;}
+.pl55{ padding-left:55px;}
+.pl60{ padding-left:60px;}
+.pl65{ padding-left:65px;}
+.pl70{ padding-left:70px;}
+.pl75{ padding-left:75px;}
+.pl88{ padding-left:88px;}
+.pl90{ padding-left:90px;}
+.pl92{ padding-left:92px;}
+.pl100{ padding-left:100px;}
+.pl120{ padding-left:120px;}
+.pl170{ padding-left:170px;}
+
+.pr10{padding-right: 10px;}
+.pr15{padding-right: 15px;}
+.pr20{padding-right: 20px;}
+.pr25{padding-right: 25px;}
+.pr30{padding-right: 30px;}
+
+
+.ml5{ margin-left:5px;}
+.ml10{ margin-left:10px;}
+.ml20{ margin-left:20px;}
+
+.mt-5{ margin-top:-5px;}
+
+.mt5{ margin-top:5px;}
+.mt10{ margin-top:10px;}
+.mt12{ margin-top:12px;}
+.mt20{ margin-top:20px;}
+.mt30{ margin-top:30px;}
+.mt40{ margin-top:40px;}
+.mt50{ margin-top:50px;}
+
+.mb10{ margin-bottom:10px;}
+.mb20{ margin-bottom:20px;}
+.mb30{ margin-bottom:30px;}
+
+
+
+/*文字颜色*/
+.gray_1{
+  color: #2D2F33;
+}
+.gray_2{
+  color: #656973;
+}
+.gray_3{
+  color: #A8ABB3;
+}
+/*按钮颜色*/
+.brand{
+  background-color: #0D8DFC;
+}
+.brand:hover{
+  background-color: #077EE6;
+}
+.green_1{
+  background-color: #16DE9B;
+}
+.green_1:hover{
+  background-color: #15D192;
+}
+.silver_1{
+  background-color: #E6E9F0;
+}
+.silver_1:hover{
+  background-color: #D7DAE0;
+}
+.red_1{
+  background-color: #FF5C69;
+}
+.red_1:hover{
+  background-color: #ED5562;
+}
+.yellow_1{
+  background-color: #FFCC60;
+}
+.yellow_1:hover{
+  background-color: #FAC055;
+}
+.blue_1{
+  background-color: #4B9CE3;
+}
+.blue_1:hover{
+  background-color: #4085C2;
+}
+
+
+
+/*公用小组件样式*/
+.user-leval-icon{
+  display: inline-block;
+  padding: 0 5px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: normal;
+  background-image: linear-gradient(135deg,#19a7ff 0%,#058aff 100%);
+  border-radius: 3px;
+  font-size: 11px;
+  color: #fff;
+}
+
+
+
+/**自定义按钮**/
+.circle-btn {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 13px;
+  color: #0D8DFC;
+  text-align: center;
+  border: 1px solid #0D8DFC;
+  border-radius: 20px;
+  width: 80px;
+  height: 28px;
+  cursor: pointer;
+  transition: background .3s;
+
+  &:hover,&.active{
+    background: #0D8DFC;
+    color: #EDF7FF;
+  }
+}
+
+
+.circle-btn-default {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 13px;
+  background: #fff;
+  color: #656973;
+  text-align: center;
+  border: 1px solid #EBEBED;
+  border-radius: 20px;
+  width: 80px;
+  height: 28px;
+  cursor: pointer;
+  transition: background .3s;
+
+  &:hover,&.active{
+    background #eaf6ff;
+  }
+
+}
+.circle-btn-blue {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 13px;
+  background: #0D8DFC;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #0D8DFC;
+  border-radius: 20px;
+  width: 80px;
+  height: 28px;
+  cursor: pointer;
+  transition: background .3s;
+
+  &:hover,&.active{
+    background: #0d82f1;
+    color: #fff;
+  }
+}
+
+.circle-btn-yellow {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 13px;
+  background: #ffeb79;
+  color: #8c6600;
+  text-align: center;
+  border: 1px solid #ffe23b;
+  border-radius: 20px;
+  width: 80px;
+  height: 28px;
+  cursor: pointer;
+  transition: background .3s;
+
+  &:hover,&.active{
+    background: #f7e377;
+    border: 1px solid #ffc12e;
+  }
+}
+
+
+.my-button {
+  border-radius: 24px;
+  border: 0;
+  width: 128px;
+  height: 100%;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4276ff), to(#33b2ff));
+  background: linear-gradient(to bottom right, #4276ff, #33b2ff);
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+
+
+.btn-score-yellow{
+  color: #8c6600;
+  background-color: #ffeb79;
+  border-color: #ffe23b;
+
+  &:hover,&.active{
+    color: #8c6600;
+    background-color: #f7e377;
+    border-color: #ffc12e;
+  }
+}
+
+
+
+
+
+
+
+/*-------------video 播放器----------*/
+.video-js {
+  .vjs-big-play-button {
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    margin: auto
+    width: 2.4em
+    height 2.4em
+    line-height 2.4em
+    border-radius 50%
+    .vjs-icon-placeholder {
+      font-size 50px
+    }
+  }
+  .vjs-playback-rate .vjs-playback-rate-value,
+  .vjs-button > .vjs-icon-placeholder:before {
+    line-height 36px;
+  }
+}
+
+/*----------- iview-ui 样式 ----------*/
+
+// select 选择器
+.ivu-select, ivu-select-single {
+  .ivu-select-selection {
+    border: 1px solid #EBEBED;
+    border-radius: 16px;
+    height: 100%;
+    box-shadow: none
+    .ivu-select-placeholder, .ivu-select-selected-value {
+      color #656973
+      font-size 14px
+      padding-left 12px
+    }
+    .ivu-select-selected-value {
+
+    }
+  }
+  .ivu-select-arrow {
+    font-size 20px
+    margin-top -10px
+    color: #a8abb3
+  }
+  .ivu-select-dropdown {
+    max-height 163px
+  }
+  .ivu-select-item {
+    height: 36px
+    line-height 36px
+    width: 90%
+    margin 0 auto
+    padding 0
+    padding-left 13px
+    border-radius 8px
+    font-size 14px !important
+    transition none
+    + .ivu-select-item {
+      margin-top 3px
+    }
+  }
+  .ivu-select-item-selected {
+    color #fff
+  }
+  .ivu-select-item-focus {
+    background #0d8dfc
+    cursor default
+  }
+}
+
+// 分页
+.ivu-page {
+  .ivu-page-item {
+    border-radius 50% !important
+    transition none
+    &:hover a {
+      color #fff
+    }
+    &:not(.ivu-page-item-active) {
+      &:hover a {
+        color: #0d8dfc
+      }
+    }
+    &.ivu-page-item-active {
+      cursor default
+      background #0d8dfc
+      color #fff
+      a {
+        color: #fff
+        &:hover {
+          cursor default
+        }
+      }
+    }
+  }
+
+  .ivu-page-custom-text {
+    margin 0 10px !important
+  }
+  .ivu-page-disabled a {
+    color #ccc
+    &:hover {
+      color: #ccc
+    }
+  }
+}
+
+// 消息提示
+.ivu-message-notice-content {
+    padding: 10px 20px
+}
+
+/*----------- iview-ui 样式结束 ----------*/
+
+
+
+
+/*登录滑块*/
+#ali-slider .nc_scale ,#ali-slider .nc_scale span{
+  height: 40px;
+  line-height 40px;
+}
+#ali-slider input{
+  -webkit-tap-highlight-color: transparent;
+}
+
+#ali-slider .nc_scale .nc_bg {
+  background: #0D8DFC;
+}

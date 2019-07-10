@@ -1,0 +1,62 @@
+{
+  "webName":"Score-电竞玩家赛事社区",
+  "global":{
+    "login":"Sign in",
+    "register":"Sign up",
+    "join":"Join",
+    "confirm":"Confirm",
+    "submit":"Submit",
+    "all":"All",
+    "open":"Open",
+    "close":"Close",
+    "allMatchProgress":"All Match",
+    "changeLanguageModalTitle":"Select Your Language",
+    "fruit": "Fruit",
+    "experience": "Exprience",
+    "reward": "Reward"
+  },
+  "gameName":{
+    "lfl":"LFL",
+    "pvp":"PVP",
+    "pubg":"PUBG",
+    "beGame":"Blizzard Game"
+
+  },
+
+  "headerNav": {
+    "home": "Home",
+    "match": {
+      "watchMatch":"Match",
+      "matchProgress":"Match Progress",
+      "match":"Match",
+      "matchData":"Data"
+    },
+    "movie":"Movie",
+    "post": {
+      "post":"Post",
+      "moment":"Moment",
+      "follow":"Follow"
+    },
+    "bet":"Bet",
+    "star":"Star",
+    "more": {
+      "more":"More",
+      "lfl":"LFL",
+      "recreation":"Recreation",
+      "live":"Live",
+      "help":"Help"
+    }
+  },
+
+  "starPage":{
+    "hot":"Hot",
+    "myStar":"My Star"
+  },
+
+  "taskPage":{
+    "title":"The task center",
+    "dailyTasks": "Daily tasks",
+    "newbieTask": "Newbie Task",
+    "fruitBalance": "Fruit balance"
+  }
+}

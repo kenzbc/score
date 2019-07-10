@@ -1,0 +1,694 @@
+.margin_b{
+  margin-bottom:30px;
+}
+.margin_b2{
+  margin-bottom:10px;
+}
+.margin_b3{
+  margin-bottom:20px;
+}
+
+strong {
+  color #0D8DFC
+}
+
+
+/*common*/
+.betting{
+  width: 100%;
+  border-radius: 10px;
+  height:40px;
+  line-height: 40px;
+  font-weight: bold;
+  cursor default
+  border:1px solid #F0F1F2;
+  background: #FCFDFE;
+  overflow hidden
+  p{
+    color: #5F6575;
+    opacity: 0.6;
+  }
+
+  .score{
+    padding-left:15px;
+    font-size: 0;
+
+    i {
+      vertical-align:middle;
+    }
+    span {
+      font-size: 14px;
+      vertical-align:middle;
+    }
+  }
+
+  .odds{
+    width: 115px;
+    height:40px;
+    background: url('/static/images/bet/bet_betting.png') 0 -135px;
+    background-size: cover;
+
+    p{
+      padding-right:15px;
+      text-align: right;
+    }
+
+    &.opt{
+      background-position: 0 -45px;
+    }
+    &.win{
+      background-position: 0 0;
+    }
+    &.normal{
+      background-position: 0 -135px;
+    }
+
+  }
+
+
+  .icon{
+    font-size:10px;
+    color:#fff;
+    margin-right:5px;
+  }
+
+  &.normal_gray{
+    border:1px solid #F0F1F2;
+    background: #FCFDFE;
+    overflow: hidden;
+    cursor: pointer;
+
+    p{
+      color: #5F6575;
+      opacity: 1;
+    }
+
+    &:hover,
+    &:active{
+      background: #F5F6F7;
+      border: 1px solid #E6E7E8;
+
+      .normal{
+        background-position: 0 -90px;
+      }
+
+      p{
+        color: #5F6575;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.win_orange{
+    background: #FFEB79;
+    border: 1px solid #FFD651;
+    overflow: hidden;
+    cursor default
+
+    p{
+      color:#8C6600;
+      opacity:1;
+
+      .icon{
+        font-size:10px;
+        color:#fff;
+        margin-right:5px;
+      }
+    }
+  }
+
+
+  &.opt_red{
+    background: #FF5C5C;
+    border: 1px solid #FF3D3D;
+    overflow: hidden;
+
+    p{
+      color:#fff;
+      opacity: 1;
+    }
+  }
+
+  .color_red{
+    color:#FF5C5C;
+  }
+}
+
+
+.layout-default .page-content .bet-page {
+  max-width: 1200px;
+  width: 100%;
+  zoom: 1;
+  margin: 0 auto 20px;
+  padding: 0;
+
+
+  .bet-main-wrap {
+    padding-top 30px
+    width 100%
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+
+    .left-wrap {
+      width calc(100% - 400px)
+
+      .tabs-nav{
+        width: 100%;
+        ul {
+          overflow hidden
+        }
+        li{
+          width: 50%;
+          height:50px;
+          border-top:2px solid #E6E8ED;
+
+          &.active{
+            background: #fff;
+            border-top:2px solid #5F6575;
+
+            a{
+              color:#5F6575;
+              opacity: 1;
+              font-weight:bold;
+              background: #fff
+            }
+          }
+
+          a{
+            display: block;
+            text-align: center;
+            width: 100%;
+            line-height:50px;
+            opacity: 0.5;
+            font-size: 16px;
+            color: #5F6575;
+            background: #F9FAFB;
+
+          }
+        }
+      }
+
+
+    }
+
+    .right-wrap {
+      width 390px
+    }
+  }
+
+  .bet_single_list {
+    position: relative;
+
+    .bet_group_header{
+      position: relative;
+      margin-top: 30px;
+      padding-bottom: 25px;
+
+      img{
+        position: absolute;
+        top:12px;
+        display: block;
+        height:1px;
+        left:50%;
+        margin-left:-372px;
+      }
+      p{
+        text-align: center;
+        font-size:16px;
+        font-weight: bold;
+        color:#97999F;
+      }
+    }
+    .bet_group{
+      /*background: #fff;*/
+      .bet_single_title{
+        background: #23252B;
+        border: 1px solid #2B2D33;
+        overflow: hidden;
+        height:50px;
+        line-height:50px;
+
+        label{
+          width:26px;
+          height:26px;
+          margin:12px 0 0 10px;
+          vertical-align:middle;
+          overflow: hidden;
+          cursor: pointer;
+
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
+
+        .track{
+          width: auto;
+          height:18px;
+          margin:16px 0 16px 10px;
+          line-height: 18px;
+          padding:0 5px;
+          background: #FF5C5C;
+          border-radius: 4px;
+          color:#fff;
+          cursor: default;
+        }
+        p{
+          font-size:16px;
+          padding-left:15px;
+          /*font-weight: bold;*/
+          color:#fff;
+          cursor: pointer;
+          &.group_title{
+            cursor: default;
+          }
+        }
+        .games{
+          display: block;
+          width: 18px;
+          height:18px;
+          line-height:18px;
+          text-align: center;
+          margin-top:16px;
+          margin-left:10px;
+          border-radius: 6px;
+          background: #5F6575;
+          color:#fff;
+        }
+        .multiple{
+          color:#97999F;
+
+          .icon{
+            margin-right:20px;
+          }
+
+          label{
+            display: inline-block;
+            width: auto;
+            height:24px;
+            margin:13px 10px;
+            line-height: 24px;
+            padding:0 5px;
+            background: #FFDF79;
+            /*border: 1px solid #FFD651;*/
+            border-radius: 4px;
+            color:#945800;
+            text-align: center;
+            cursor: default;
+
+            span{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+
+
+    /*常规赛*/
+    .bet_single_regular_dec,
+    .bet_single_cycle_dec{
+      margin:0 auto;
+      background: url('/static/images/bet/bet_bj_black.png');
+      background-size: cover;
+      overflow: hidden;
+    }
+    .bet_single_regular_dec{
+      padding:25px 4%;
+
+      >div{
+        height:50px;
+      }
+
+      .left{
+        width: 10%;
+
+        p{
+          text-align: center;
+          color:#A5A8B2;
+
+          &:first-Child{
+            font-size:20px;
+          }
+        }
+      }
+      .center{
+        width: 80%;
+        padding:0 10%;
+        overflow: hidden;
+        font-size:24px;
+        font-weight: bold;
+
+        p{
+          line-height:50px;
+        }
+        .bet_clan{
+          width: 45%;
+          p{
+            color:#A5A8B2;
+          }
+
+          &:last-Child {
+            p{
+              margin-left:15%;
+            }
+          }
+          &:first-Child {
+            p{
+              margin-right:15%;
+            }
+          }
+        }
+
+
+        .bet_vs{
+          width: 10%;
+          color: #A2856B;
+          font-size:14px;
+
+          p{
+            line-height:14px;
+            font-weight:normal;
+
+            &:first-Child{
+              font-weight:bold;
+              line-height:36px;
+              font-size:24px;
+              transform: scale(1,1.5);
+              -ms-transform: scale(1,1.5);
+              -webkit-transform: scale(1,1.5);
+              -moz-transform: scale(1,1.5);
+              -o-transform: scale(1,1.5);
+            }
+          }
+        }
+        label{
+          max-width: 50px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .right{
+        width: 10%;
+        p{
+          text-align: center;
+          background: #369373;
+          border-radius: 10px;
+          line-height: 30px;
+          color:#fff;
+          margin-top:10px;
+          font-weight:bold;
+          cursor: pointer;
+        }
+      }
+    }
+
+
+    /*春季赛*/
+    .bet_single_cycle_dec{
+      padding:15px 30px 20px;
+
+      .big_title{
+        display: inline-block;
+        font-size:24px;
+        border-bottom:1px solid #3A3D45;
+        padding-bottom:5px;
+        color:#97999F;
+        font-family: 'Trade Gothic LT Bold', '\5FAE\8F6F\96C5\9ED1';
+        /*font-weight: normal;*/
+      }
+
+      .min_title{
+        /*line-height: 30px;*/
+        margin-top:5px;
+        font-weight: bold;
+        color:#97999F;
+      }
+    }
+
+
+
+
+
+
+    .bet_together_regular_dec{
+      overflow: hidden;
+      background-image: linear-gradient(-225deg, #F9FAFB 0%, #F5F5F6 100%);
+      border-right:1px solid #EBEBEC;
+      border-left:1px solid #EBEBEC;
+      padding:45px 0 35px;
+
+      .left{
+        width: 15%;
+
+        .avatar{
+          display: block;
+          width: 70px;
+          height:70px;
+          border-radius: 50%;
+          border:1px solid #EBEBEC;
+          overflow: hidden;
+          margin-left:30%;
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .center{
+        width: 45%;
+
+        p{
+          text-align: left;
+          color:#97999F;
+        }
+
+        .title{
+          font-size: 16px;
+          color: #5F6575;
+          font-weight: bold;
+          margin-bottom:10px;
+        }
+      }
+
+      .right{
+        //width: 40%;
+        position: relative;
+        right: 50px;
+        top: -10px;
+
+        >p{
+          position: absolute;
+          top:68px;
+          right:88px;
+        }
+      }
+
+    }
+
+
+    .bet_together_regular_dec .right_or_wrong{
+      overflow: hidden;
+      margin-left:50%;
+    }
+    .bet_together_regular_dec .right_or_wrong div{
+      width: 40px;
+      line-height: 30px;
+    }
+    .bet_together_regular_dec .right_or_wrong div p{
+      text-align: center;
+    }
+
+    .bet_together_regular_dec .right_or_wrong div p:first-Child{
+      font-weight: bold;
+      font-size:24px;
+    }
+    .bet_together_regular_dec .right_or_wrong .blue p{
+      color:#4990E2;
+    }
+    .bet_together_regular_dec .right_or_wrong .light_gray p{
+      color:#A5A8B2;
+    }
+    .bet_together_regular_dec .right_or_wrong .gray p{
+      color:#5F6575;
+    }
+
+    /*单场菠菜投注*/
+    .bet_single_detail{
+      overflow: hidden;
+      border:1px solid #EBEBEC;
+      padding:0 6px 15px;
+      background: #fff;
+
+      &.pointer{
+        .win_orange {
+          cursor pointer
+        }
+      }
+    }
+    .bet_single_detail_title{
+      line-height:55px;
+      overflow: hidden;
+      padding:0 10px;
+    }
+
+    .bet_single_detail_title>p:first-Child{
+      cursor: pointer;
+    }
+    .bet_single_detail_title .title{
+      font-size:16px;
+    }
+
+    .bet_single_detail_title span{
+      margin-right:10px;
+    }
+    .bet_single_detail_title i{
+      cursor: pointer;
+    }
+    .bet_single_detail_dec{
+      overflow: hidden;
+    }
+    .bet_single_detail_dec a{
+      padding:5px 0 10px;
+      display: block;
+      width: 48%;
+      margin:0 1%;
+    }
+    .bet_single_detail_dec a:first-Child{
+
+    }
+
+    /*组合菠菜投注*/
+    .bet_together_detail{
+      border-left:1px solid #EBEBEC;
+      border-right:1px solid #EBEBEC;
+      overflow: hidden;
+      background: #F9FAFB;
+    }
+    .bet_together_group{
+      width: calc((100% - 1px)/2);
+      margin-top:8px;
+      padding-bottom:20px;
+      border-top:1px solid #EBEBEC;
+      border-bottom:1px solid #EBEBEC;
+      /*height:100px;*/
+      background: #fff;
+    }
+
+    .bet_together_group:nth-child(2n+1){
+      border-right:1px solid #EBEBEC;
+    }
+    .bet_together_group:first-Child,.bet_together_group:nth-child(2){
+      border-top:0;
+      margin-top:0;
+    }
+    .bet_together_title{
+      padding:0 20px;
+      line-height: 55px;
+      overflow: hidden;
+    }
+    .bet_together_title p{
+      font-size:16px;
+    }
+    .bet_together_title i{
+      display: block;
+    }
+    .bet_together_title .icon{
+      cursor: pointer;
+    }
+    .bet_together_dec{
+      padding:0 20px;
+      /*padding-bottom:20px;*/
+    }
+    .bet_together_dec a{
+      display: block;
+      width: 100%;
+    }
+    .bet_together_vote{
+      background: #fff;
+      padding:30px 25px;
+      border: 1px solid #EBEBEC;
+      border-top:0;
+      overflow: hidden;
+    }
+    .bet_together_vote .left{
+      width: 42%;
+      color:#97999F;
+    }
+    .bet_together_vote .center{
+      width: 16%;
+      background: #FFE23B;
+      border-radius: 8px;
+    }
+    .bet_together_vote .center p{
+      text-align: center;
+      line-height: 36px;
+      color:#8C6600;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .bet_together_vote .right{
+      width: 42%;
+      color:#97999F;
+      text-align: right;
+    }
+    .bet_together_vote .right p{
+      line-height: 36px;
+      cursor: pointer;
+    }
+    .bet_together_vote .right p span{
+      color:#ffa626;
+    }
+    .bet_together_vote .right p i{
+      margin-right:5px;
+    }
+
+
+
+    .bet_together_detail .betting{
+      cursor: default;
+    }
+  }
+
+
+
+  @media screen and (min-width: 769px) and (max-width: 1099px) {
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .bet-main-wrap {
+      display block
+      overflow hidden
+      //position relative
+
+      //.left-wrap {
+      //  width 100%
+      //  position absolute
+      //  top 1208 px
+      //}
+      //.right-wrap {
+      //  width 100%
+      //  position absolute
+      //  top 0
+      //}
+    }
+
+    .bet_single_list {
+
+      .bet_single_detail_dec {
+        border 0
+        a {
+          width calc(100% - 20px)
+          margin 0 10px
+        }
+      }
+    }
+  }
+}
+
+
